@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="header">Etch-a-Sketch</div>
     <div class="container"></div>
     <div class="input">
-        <button class="reset">Reset</button>
+        <button class="mode">Erase</button>
+        <input type="color" id="fillColor" value="#2e8a56" list="presets"/>
+            <datalist id="presets">
+                <option>#c32727</option>
+                <option>#2e8a56</option>
+                <option>#ffa500</option>
+                <option>#ffff00</option>
+                <option>#0000ff</option>
+                <option>#da70d6</option>
+                <option>#800080</option>
+                <option>#6699cc</option>
+                <option value="#cccccc"></option>
+                <option value="#111111"></option>
+            </datalist>
         <input type="number" id="gridSize" min='1' max='100' size="10" value='16' placeholder="16" />
         <button class="resize">Resize</button>
-    </div>
+        <button class="reset">Reset</button>
+        </div>
 </body>
 </html>

@@ -4,13 +4,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Lato, Roboto, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-    font-weight: 900;
-    font-size: 24px;
-    color: rgb(40, 49, 49);
+    font-weight: 700;
+    font-size: 30px;
+    color: #283131;
     margin-bottom: 8px;
 }
 
@@ -20,15 +20,21 @@ body {
     width: 600px;
     height: 600px;
     gap: 1px;
-    max-width: 600px;;
-}
-
-.square {
-    border: 1px solid darkgray;
+    border: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f3f3f3; */
 }
 
 .input{
     margin-top: 10px;
+    padding: 8px ;
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    width: 400px;
 }
 
 button {
@@ -42,11 +48,15 @@ button {
 }
 
 button.reset {
-    background-color: rgba(195, 39, 39, 0.881);
+    background-color: #c32727e1;
 }
 
 button.resize {
-    background-color: seagreen;
+    background-color: #2e8a56;
+}
+
+button.mode {
+    background-color: gray;
 }
 
 button:hover {
